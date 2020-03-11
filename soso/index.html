@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width",initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>搜索</title>
+    
+</head>
+<body>
+    <div id="img">
+        <img src="images/logo.png">
+    </div>
+    <div id="box">
+        <input type="text" name="search" id="te">
+        <input type="button" name="" id="but" value="搜索">
+        <iframe id="baiduframe" src="http://baidu.com"></iframe>
+        <iframe id="huabanframe" src="http://huaban.com"></iframe>
+    </div>
+    <div id="show">
+        <ul>
+
+        </ul>
+    </div>
+    <script type="text/javascript" >
+        document.getElementsByTagName('html')[0].style.fontSize = document.documentElement.clientWidth/10 + "px";
+        var inp = document.getElementById('te');
+        var show = document.getElementById('show');
+        var oul = document.getElementsByTagName('ul')[0];
+        inp.onkeyup = function(){
+
+            if(inp.value){
+                show.style.display="block";
+            }else{
+                show.style.display="none";
+            }
+            var os = document.createElement('script');
+            os.src='https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd='+inp.value+'&json=1&p=3&sid=1458_21079_18133_20697_20930&req=2&csor=1&cb=figting'
+            document.body.appendChild(os);
+        }
+        var but = document.getElementById('but');
+        but.onclick = function(){
+            var url = 'https://www.baidu.com/s?wd='+inp.value+'&rsv_spt=1&rsv_iqid=0xc918c1cc0000cae8&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=0&rsv_sug3=2&rsv_sug1=2&rsv_sug7=101&inputT=333217&rsv_sug4=333218';
+            document.getElementById("baiduframe").src = url;
+
+        }
+        function figting(mjson){
+            oul.innerHTML = "";
+            var l = mjson.s;
+            for ( var i = 0;i<l.length;i++) {
+                var oli = document.createElement('li');
+                oli.innerHTML='<a href=https://www.baidu.com/s?wd='+l[i]+'&rsv_spt=1&rsv_iqid=0xc918c1cc0000cae8&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=0&rsv_sug3=2&rsv_sug1=2&rsv_sug7=101&inputT=333217&rsv_sug4=333218>'+l[i]+'</a>'
+                oul.appendChild(oli);
+
+            }
+        }
+    </script>
+</body>
+</html>
