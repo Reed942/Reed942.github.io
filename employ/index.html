@@ -27,16 +27,16 @@
 					<p><br/>
 					<br/></p>
 
-					<h2 class="title">算法工程师</h2>
+					<h2 class="title"><strong>算法工程师</strong></h2>
 
-					<h3>说明：</h3>
+					<h3><em>说明：</em></h3>
 
-					<pre>
+					<pre class="text">
 1、算法工程师岗位主要是通过C、C++、Python、Javascript、Java SE等计算机语言开发和设计音乐合成、音乐编辑等智能算法；
 2、优化开发公司现有算法方案，以及新的算法功能；
 					</pre>
 
-					<h3>要求：</h3>
+					<h3><em>要求：</em></h3>
 
 					<pre>
 1、至少熟练使用C、C++、Python、Javascript、Java SE 等计算机语言中的两种；
@@ -49,17 +49,17 @@
 8、了解语音信号处理的流程及相关原理；
 					</pre>
 
-					<h2 class="title">JAVA后端工程师</h2>
+					<h2 class="title"><strong>JAVA后端工程师</strong></h2>
 
-					<h3>说明：</h3>
+					<h3><em>说明：</em></h3>
 
-					<pre>
+					<pre class="text">
 1、JAVA后端工程师岗位主要是通过JAVA Web框架实现网站、小程序、app等应用的开发；
 2、根据业务需求制定方案；
 3、根据方案制定开发计划并完成开发和自测。
 					</pre>
 
-					<h3>要求：</h3>
+					<h3><em>要求：</em></h3>
 
 					<pre>
 1、精通J2SE基本知识，精通Java Web开发流程
@@ -72,16 +72,16 @@
 8、熟悉Netty框架的使用；
 					</pre>
 
-					<h2 class="title">JavaScript前端工程师</h2>
+					<h2 class="title"><strong>JavaScript前端工程师</strong></h2>
 
-					<h3>说明：</h3>
+					<h3><em>说明：</em></h3>
 
-					<pre>
+					<pre class="text">
 1、JS前端工程师岗位主要通过Javascript计算机语言处理前端页面的搭建；
 2、通过开发JS组件实现页面的加载以及数据同步。
 					</pre>
 
-					<h3>要求：</h3>
+					<h3><em>要求：</em></h3>
 
 					<pre>
 1、熟悉JavaScript开发，精通JS组件开发；
@@ -91,15 +91,15 @@
 5、了解App、小程序的开发；
 					</pre>
 
-					<h2 class="title">UI/海报平面设计师</h2>
+					<h2 class="title"><strong>UI/海报平面设计师</strong></h2>
 
-					<h3>说明：</h3>
+					<h3><em>说明：</em></h3>
 
-					<pre>
+					<pre class="text">
 1、UI/海报设计师岗位主要是根据需求设计产品UI、宣传海报等跟设计和视觉相关的工作。
 					</pre>
 
-					<h3>要求：</h3>
+					<h3><em>要求：</em></h3>
 
 					<pre>
 1、有过满意的设计案例，对视觉艺术有自己的观点；
@@ -107,11 +107,11 @@
 3、了解UI设计和用户体验交互设计；
 					</pre>
 
-					<h2 class="title">商务BD</h2>
+					<h2 class="title"><strong>商务BD</strong></h2>
 
-					<h3>说明：</h3>
+					<h3><em>说明：</em></h3>
 
-					<pre>
+					<pre class="text">
 1、负责与目标客户（潜在客户和准客户）的沟通，跟踪、接待及合同谈判，促成合作；
 2、负责潜在客户的发掘、沟通和联络；
 3、负责客户潜在项目的可行性调研；
@@ -122,7 +122,7 @@
 8、完成上级安排的其他事项。
 					</pre>
 
-					<h3>要求：</h3>
+					<h3><em>要求：</em></h3>
 
 					<pre>
 1、本科及以上学历，音乐相关专业，有音乐工作室商务推广工作经验者优先；
@@ -134,17 +134,17 @@
 7、文笔较好，具有编写项目建议书、技术合同等文件的能力。
 					</code></pre>
 
-					<h2 class="title">运营编辑经理</h2>
+					<h2 class="title"><strong>运营编辑经理</strong></h2>
 
-					<h3>说明：</h3>
+					<h3><em>说明：</em></h3>
 
-					<pre>
+					<pre class="text">
 1、运营编辑岗位主要是对公司产品的管理、运营、推广和文案宣传；
 2、通过线上网络渠道和线下结合推广产品；
 3、营造公司产品的经营文化；
 					</pre>
 
-					<h3>要求：</h3>
+					<h3><em>要求：</em></h3>
 
 					<pre>
 1、有过互联网产品的运营销售工作经验；
@@ -160,73 +160,4 @@
 </div>
    
 
-<script src="./js/jquery-1.12.2.min.js"></script>
-<script src="./js/main.js"></script>
-
-
-<script>
-	function get_share_datas_from_html_inapp() {
-		var shid = "shdefault",
-			urlShid,
-			urlSid,
-			pk = "pkdefault",
-			pp = "ppdefault",
-			pkn = (typeof _PK != 'undefined' ? _PK : document.getElementById("page_key_name")),
-			getQueryString = function(name) {
-				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"),
-					r = window.location.search.substr(1).match(reg);
-				if (r != null) {
-					return unescape(r[2])
-				}
-				return null;
-			};
-		urlShid = getQueryString("shid");
-		urlSid = getQueryString("sid");
-		if (urlShid) {
-			shid = urlShid;
-		} else if (urlSid) {
-			shid = urlSid;
-		}
-		if (pkn) {
-			var pknVal = pkn.value;
-			if (pknVal) {
-				var pkArray = pknVal.split("|");
-				if (pkArray.length == 1) {
-					pk = pkArray[0];
-				} else if (pkArray.length >= 2) {
-					pk = pkArray[0];
-					pp = pkArray[1];
-				}
-			}
-		}
-		var ret = [];
-		ret["shid"] = shid;
-		ret["pk"] = pk;
-		ret["pp"] = pp;
-		return ret;
-	}
-	function getQueryString(name)
-	{
-		var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
-		var r = window.location.search.substr(1).match(reg);
-		if(r!=null)return  unescape(r[2]); return null;
-	}
-</script>
-<script>
-	var _T = _T || [];
-	(function() {
-	  var script = document.createElement("script");
-	  script.src = "/js/analytics/ka.js";
-	  var s = document.getElementsByTagName("script")[0];
-	  s.parentNode.insertBefore(script, s);
-	})();
-	
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?194df3105ad7148dcf2b98a91b5e727a";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
 </body></html>
